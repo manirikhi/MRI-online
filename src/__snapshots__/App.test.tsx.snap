@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders app 1`] = `
+<DocumentFragment>
+  <main
+    class="app-container"
+  >
+    <img
+      alt="logo"
+      class="App-logo"
+      src="./logo.png"
+    />
+    <div
+      class="app-wrapper"
+    >
+      <div
+        class="ag-theme-alpine order-table"
+      >
+        <h3
+          class="order-label"
+        >
+          Orders
+        </h3>
+        <p>
+          Loading orders.....
+        </p>
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;

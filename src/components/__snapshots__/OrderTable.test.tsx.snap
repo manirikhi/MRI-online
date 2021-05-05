@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders OrderTable with loading state 1`] = `
+<DocumentFragment>
+  <div
+    class="ag-theme-alpine order-table"
+  >
+    <h3
+      class="order-label"
+    >
+      Orders
+    </h3>
+    <p>
+      Loading orders.....
+    </p>
+  </div>
+</DocumentFragment>
+`;
