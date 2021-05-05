@@ -1,8 +1,31 @@
 .order-table {
-  height: 400px;
   width: 100%
 }
 
 .order-label {
-  padding: 1rem;
+  font-size: 1rem;
+}
+
+.order-header {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ag-header {
+  background-color: white !important;
+  border-top: none;
+}
+
+.ag-header-row {
+  font-weight: 400 !important;
+  color: black !important;
+  .ag-header-active, .ag-header-cell-sorted-desc, .ag-header-cell-sorted-asc {
+    font-weight: 700 !important;
+    color:black !important;
+  }
+}
+
+.icon {
+  margin-right: 1rem;
 }

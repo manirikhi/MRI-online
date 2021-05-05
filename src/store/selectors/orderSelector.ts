@@ -1,5 +1,5 @@
 import { createSelector } from '@reduxjs/toolkit'
-import { format } from 'date-fns'
+import dayjs from 'dayjs'
 import { RootState } from '../store'
 
 const ordersSelector = (state: RootState) => state.order.orders
@@ -14,8 +14,8 @@ const makeSelectOrders = createSelector(
             customerName: `${order.customer.first_name}, ${order.customer.last_name}`,
             customerAddress: `${order.customer.address.line1} ${order.customer.address.line2}`,
             orderValue: `$${order.order_details.value}`,
-            orderDate: format(new Date(order.order_details.date), 'yyyy-MM-dd'),
-            shipDate: format(new Date(order.shipping_details.date), 'yyyy-MM-dd'),
+            orderDate: dayjs(order.order_details.date).format('YYYY-MM-DD'),
+            shipDate: dayjs(order.shipping_details.date).format('YYYY-MM-DD'),
             status: order.status
         }
     })

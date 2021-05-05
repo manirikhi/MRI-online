@@ -5,10 +5,10 @@ export interface Order {
     "customer": Customer,
     "order_details":{
        "value": number,
-       "date": Date
+       "date": string
     },
     "shipping_details":{
-       "date":Date
+       "date":string
     },
     "status":string
  }
